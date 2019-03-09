@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/Our Assets/Scenes/Level 1 (Demo).unity
+  isLoaded: 1
+  isActive: 1
