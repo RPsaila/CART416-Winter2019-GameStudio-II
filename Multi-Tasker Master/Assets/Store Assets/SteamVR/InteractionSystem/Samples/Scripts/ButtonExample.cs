@@ -33,7 +33,7 @@ namespace Valve.VR.InteractionSystem.Sample
 
 
             Vector3 initialScale = Vector3.one * 0.01f;
-            Vector3 targetScale = Vector3.one * (1 + (Random.value * 0.25f));
+            Vector3 targetScale = Vector3.one * (0.1f + (Random.value * 0.25f));
 
             float startTime = Time.time;
             float overTime = 0.5f;

@@ -4,17 +4,15 @@ using UnityEngine;
 
 public class Tool1 : MonoBehaviour
 {
-    EnemyMove myEnemyMoveScript;
-    public GameObject Spawn;
+    public GameObject Manager;
 
-    public List<GameObject> enemies;
+    private List<GameObject> enemies;
 
     // Start is called before the first frame update
 
     IEnumerator Start()
     {
-        myEnemyMoveScript = Spawn.GetComponent<EnemyMove>();
-        enemies = myEnemyMoveScript.enemies;
+        enemies = Manager.GetComponent<Manager>().enemies;
         yield return new WaitForEndOfFrame();
     }
 

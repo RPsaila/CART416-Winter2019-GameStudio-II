@@ -187,6 +187,8 @@
     <Compile Include="Assets\Store Assets\SteamVR\InteractionSystem\Samples\JoeJeff\ProceduralHats.cs" />
     <Compile Include="Assets\Store Assets\SteamVR\InteractionSystem\Samples\Scripts\ButtonEffect.cs" />
     <Compile Include="Assets\Store Assets\SteamVR\InteractionSystem\Samples\Scripts\ButtonExample.cs" />
+    <Compile Include="Assets\Store Assets\SteamVR\InteractionSystem\Samples\Scripts\ButtonExample1.cs" />
+    <Compile Include="Assets\Store Assets\SteamVR\InteractionSystem\Samples\Scripts\ButtonExample2.cs" />
     <Compile Include="Assets\Store Assets\SteamVR\InteractionSystem\Samples\Scripts\ControllerHintsExample.cs" />
     <Compile Include="Assets\Store Assets\SteamVR\InteractionSystem\Samples\Scripts\CustomSkeletonHelper.cs" />
     <Compile Include="Assets\Store Assets\SteamVR\InteractionSystem\Samples\Scripts\FloppyHand.cs" />

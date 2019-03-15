@@ -340,7 +340,12 @@
     <Compile Include="Assets\Oculus\VoiceMod\Scripts\Helpers\OVRMicInput.cs" />
     <Compile Include="Assets\Oculus\VoiceMod\Scripts\OVRVoiceMod.cs" />
     <Compile Include="Assets\Oculus\VoiceMod\Scripts\OVRVoiceModContext.cs" />
-    <Compile Include="Assets\Our Assets\Scripts\EnemyMove.cs" />
+    <Compile Include="Assets\Our Assets\Scripts\AdjustScript.cs" />
+    <Compile Include="Assets\Our Assets\Scripts\Clock.cs" />
+    <Compile Include="Assets\Our Assets\Scripts\EnemyMoving.cs" />
+    <Compile Include="Assets\Our Assets\Scripts\GameControl.cs" />
+    <Compile Include="Assets\Our Assets\Scripts\Manager.cs" />
+    <Compile Include="Assets\Our Assets\Scripts\Moving.cs" />
     <Compile Include="Assets\Our Assets\Scripts\Pointer.cs" />
     <Compile Include="Assets\Our Assets\Scripts\Teleporter.cs" />
     <Compile Include="Assets\Our Assets\Scripts\Tool1.cs" />

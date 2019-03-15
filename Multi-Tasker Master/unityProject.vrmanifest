@@ -5,7 +5,7 @@
       "app_key": "application.generated.unity.multitaskermaster.exe",
       "launch_type": "url",
       "url": "steam://launch/",
-      "action_manifest_path": "D:\\Development\\Game Studio II\\Multi-Tasker Master\\Multi-Tasker Master\\actions.json",
+      "action_manifest_path": "D:\\Development\\Computation Arts\\Cart 416 - Game Studio II\\CART416-Winter2019-GameStudio-II-master\\Multi-Tasker Master\\actions.json",
       "strings": {
         "en_us": {
           "name": "Multi-Tasker Master [Testing]"
