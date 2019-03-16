@@ -12,6 +12,9 @@ TagManager:
   - Enemy
   - MovingEnemy
   - EnemySpawn
+  - Snacks
+  - FastFoods
+  - Meals
   layers:
   - Default
   - TransparentFX

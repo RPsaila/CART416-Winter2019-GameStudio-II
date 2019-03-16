@@ -1,17 +1,25 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 namespace Valve.VR.InteractionSystem.Sample
 {
+
     public class ButtonExample : MonoBehaviour
     {
+
+        public GameObject GameControlObject;
+
         public HoverButton hoverButton;
 
         public GameObject prefab;
 
+        public List<GameObject> foodPrefabs;
+
         private void Start()
         {
             hoverButton.onButtonDown.AddListener(OnButtonDown);
+            foodPrefabs = GameControlObject.GetComponent<GameControl>().foodPrefabs;
         }
 
         private void OnButtonDown(Hand hand)
@@ -19,9 +27,11 @@ namespace Valve.VR.InteractionSystem.Sample
             StartCoroutine(DoPlant());
         }
 
-        private IEnumerator DoPlant()
+        public IEnumerator DoPlant()
         {
             GameObject planting = GameObject.Instantiate<GameObject>(prefab);
+            foodPrefabs.Add(planting);
+
             planting.transform.position = this.transform.position;
             planting.transform.rotation = Quaternion.Euler(0, Random.value * 360f, 0);
 

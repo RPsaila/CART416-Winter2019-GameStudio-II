@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028355, g: 0.22571374, b: 0.30692255, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -455,7 +455,7 @@ Transform:
   - {fileID: 437599677}
   - {fileID: 1736810645}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &299433574
 GameObject:
@@ -500,8 +500,73 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80df3856ba408c944a3cf528cf7bad83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GameControlObject: {fileID: 0}
   hoverButton: {fileID: 1023624354}
   prefab: {fileID: 5743398731179063301, guid: ee00efc16ff6c244294563e05bafdf6e, type: 3}
+  foodPrefabs: []
+--- !u!1 &345525908
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 345525910}
+  - component: {fileID: 345525909}
+  m_Layer: 0
+  m_Name: GameControl
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &345525909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 345525908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eae5ba2ace7fc4824ac8d95bb2360562, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameControlObject: {fileID: 0}
+  Manager: {fileID: 0}
+  myInteractionsScript: {fileID: 0}
+  myToolScript: {fileID: 0}
+  myClockScript: {fileID: 0}
+  schoolGPA: 0
+  hunger: 0
+  studentBudget: 0
+  schoolEnemyValue: 0
+  hungerSnacksValue: 0
+  hungerFastFoodsValue: 0
+  hungerMealsValue: 0
+  moneySnacksValue: 0
+  moneyFastFoodsValue: 0
+  moneyMealsValue: 0
+  enemyWaveCount: 0
+  newSnacks: []
+  newFastFoods: []
+  newMeals: []
+  foodPrefabs: []
+--- !u!4 &345525910
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 345525908}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.38008893, y: 12.03, z: -0.49137872}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &377920009
 GameObject:
   m_ObjectHideFlags: 0
@@ -651,7 +716,7 @@ PrefabInstance:
     - target: {fileID: 3518403746501054653, guid: 42ff92352f1f54027847bc2e41e41261,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3518403746501054653, guid: 42ff92352f1f54027847bc2e41e41261,
         type: 3}
@@ -846,7 +911,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &531726391
 GameObject:
@@ -889,7 +954,7 @@ Transform:
   - {fileID: 1973290707}
   - {fileID: 299433575}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &533824980
 GameObject:
@@ -919,7 +984,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &735026829 stripped
 Transform:
@@ -1198,7 +1263,7 @@ Transform:
   m_LocalScale: {x: 0.6558718, y: 1, z: 2.7523}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &837346119
 GameObject:
@@ -1426,6 +1491,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a25465ff5f9fa4be6a6729deacca0f5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TotalEnemyWaves: 0
   hoursTransform: {fileID: 184474402}
   minutesTransform: {fileID: 992842869}
   secondsTransform: {fileID: 735026829}
@@ -1581,7 +1647,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1094511911
 PrefabInstance:
@@ -1722,6 +1788,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Manager: {fileID: 1072557721}
+  collided: 0
 --- !u!114 &1307515133
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1904,7 +1971,7 @@ Transform:
   m_LocalScale: {x: 0.1, y: 0.7, z: 0.1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1325950510
 PrefabInstance:
@@ -2002,6 +2069,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Manager: {fileID: 1072557721}
+  collided: 0
 --- !u!114 &1337274642
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2184,7 +2252,7 @@ Transform:
   m_LocalScale: {x: 0.1, y: 0.7, z: 0.1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1461620625
 GameObject:
@@ -2492,7 +2560,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
@@ -2614,7 +2682,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &1890724436
 GameObject:
@@ -2644,7 +2712,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &1919171583
 GameObject:
@@ -2689,8 +2757,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80df3856ba408c944a3cf528cf7bad83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GameControlObject: {fileID: 0}
   hoverButton: {fileID: 1325950511}
   prefab: {fileID: 8363295120603356847, guid: 162d8bb0d5dcbba4ba7ba7b2fa8bf9ab, type: 3}
+  foodPrefabs: []
 --- !u!1 &1973290706
 GameObject:
   m_ObjectHideFlags: 0
@@ -2734,8 +2804,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80df3856ba408c944a3cf528cf7bad83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GameControlObject: {fileID: 0}
   hoverButton: {fileID: 9588031}
   prefab: {fileID: 1543333958982935023, guid: ffa886f66a16e134b97d91e70822f841, type: 3}
+  foodPrefabs: []
 --- !u!1 &2072531369
 GameObject:
   m_ObjectHideFlags: 0
@@ -2826,5 +2898,5 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 691598457881819308}
   m_Layer: 0
   m_Name: Food Medium
-  m_TagString: Untagged
+  m_TagString: FastFoods
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class Tool1 : MonoBehaviour
 {
+
     public GameObject Manager;
 
     private List<GameObject> enemies;
 
+    [HideInInspector]
+    public bool collided = false;
     // Start is called before the first frame update
 
     IEnumerator Start()
@@ -22,11 +25,12 @@ public class Tool1 : MonoBehaviour
       
     }
 
-    private void OnCollisionEnter(Collision enemy)
+    public void OnCollisionEnter(Collision enemy)
     {
         //Debug.Log("works");
         if (enemy.gameObject.tag == "MovingEnemy")
         {
+            collided = true;
             //Debug.Log("enemycollision");
             for (int i = enemies.Count - 1; i >= 0; i--)
             {
